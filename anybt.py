@@ -549,8 +549,8 @@ def main():
     console = Console()
     table = Table(show_header=True, header_style="bold magenta", expand=True)
     table_centered = Align.center(table)
-    link = "You could also try a web version running on ENS & IPFS:\n https://anybt.eth.limo"
-    table.add_column(link)
+    link = "Try a web version running on ENS & IPFS"
+    table.add_column("[bold link=https://anybt.eth.limo]{}[/]".format(link))
     table.add_column("ext", style="dim", no_wrap=True)
 
     for row in rst['result']:
